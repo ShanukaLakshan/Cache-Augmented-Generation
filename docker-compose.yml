@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  cag_system:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
